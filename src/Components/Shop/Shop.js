@@ -6,8 +6,11 @@ import "./Shop.css";
 function Shop() {
   const first10 = Fakedata.slice(0, 10);
   const [products, setProducts] = useState(first10);
-  const handleAddProduct = () => {
-    console.log("product added");
+  const [cart, setCart] = useState([]);
+  const handleAddProduct = (product) => {
+    console.log("product added", product);
+    const NewCart = [...cart, product];
+    setCart(NewCart);
   };
 
   return (
@@ -23,6 +26,7 @@ function Shop() {
       </div>
       <div className="cart-container">
         <h3>this is cart </h3>
+        <h5>Order Summery {cart.length} </h5>
       </div>
     </div>
   );
