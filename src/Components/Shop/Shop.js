@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Fakedata from "../../Fakedata";
+import Cart from "../Cart/cart";
 import Product from "../Product/Product";
 import "./Shop.css";
 function Shop() {
@@ -25,8 +26,7 @@ function Shop() {
         ))}
       </div>
       <div className="cart-container">
-        <h3>this is cart </h3>
-        <h5>Order Summery {cart.length} </h5>
+        <Cart cart={cart}></Cart>
       </div>
     </div>
   );
