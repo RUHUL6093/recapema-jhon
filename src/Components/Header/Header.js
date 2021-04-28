@@ -6,11 +6,12 @@ const Header = () => {
     <div className="Header">
       <img src={logo} alt="" />
       <nav>
-        <a href='/shop'>Shop</a>
-        <a href='/review'>Order Review</a>
-        <a href='/manage'>Manage Inventory</a>
-        <a href='/admin'>Admin</a>
-        <a href='/login'>login</a></nav>
+        <a href="/shop">Shop</a>
+        <a href="/review">Order Review</a>
+        <a href="/manage">Manage Inventory</a>
+        <a href="/admin">Admin</a>
+        <a href="/login">login</a>
+      </nav>
     </div>
   );
 };
