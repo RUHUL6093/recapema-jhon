@@ -1,17 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Product.css";
 const Product = (props) => {
-  const { img, name, price } = props.product;
+  const { img, name, price, key } = props.product;
   return (
     <div className="product">
       <div>
         <img src={img} alt="" />
       </div>
       <div className="product-name">
+        <h4>
+          {" "}
+          <Link> </Link>
+        </h4>
         <h3>{name}</h3>
         <br />
         <p>${price}</p>
-        <button onClick={() => props.handleAddProduct(props.product)}> Add to Cart</button>
+        <button onClick={() => props.handleAddProduct(props.product)}>
+          {" "}
+          Add to Cart
+        </button>
       </div>
     </div>
   );
