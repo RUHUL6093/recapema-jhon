@@ -9,11 +9,8 @@ const Product = (props) => {
         <img src={img} alt="" />
       </div>
       <div className="product-name">
-        <h4>
-          {" "}
-          <Link> </Link>
-        </h4>
-        <h3>{name}</h3>
+      
+        <h3><Link to={"/product/ " + key} >{name}</Link></h3>
         <br />
         <p>${price}</p>
         <button onClick={() => props.handleAddProduct(props.product)}>
