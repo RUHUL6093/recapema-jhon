@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <div className="Header">
       <img src={logo} alt="" />
+      <h1>Ema Jhon Simple</h1>
       <nav>
         <a href="/shop">Shop</a>
         <a href="/review">Order Review</a>
